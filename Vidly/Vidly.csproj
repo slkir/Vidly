@@ -219,6 +219,10 @@
     <Compile Include="Migrations\202010140957431_PopulateGenres.Designer.cs">
       <DependentUpon>202010140957431_PopulateGenres.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202010141022457_AddAdditionalFieldsToMovie.cs" />
+    <Compile Include="Migrations\202010141022457_AddAdditionalFieldsToMovie.Designer.cs">
+      <DependentUpon>202010141022457_AddAdditionalFieldsToMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -345,6 +349,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202010140957431_PopulateGenres.resx">
       <DependentUpon>202010140957431_PopulateGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010141022457_AddAdditionalFieldsToMovie.resx">
+      <DependentUpon>202010141022457_AddAdditionalFieldsToMovie.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
