@@ -203,6 +203,10 @@
     <Compile Include="Migrations\202010140809533_PopulateMembershiptTitles.Designer.cs">
       <DependentUpon>202010140809533_PopulateMembershiptTitles.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202010140834236_AddBirthdayFieldToCustomers.cs" />
+    <Compile Include="Migrations\202010140834236_AddBirthdayFieldToCustomers.Designer.cs">
+      <DependentUpon>202010140834236_AddBirthdayFieldToCustomers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -316,6 +320,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202010140809533_PopulateMembershiptTitles.resx">
       <DependentUpon>202010140809533_PopulateMembershiptTitles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010140834236_AddBirthdayFieldToCustomers.resx">
+      <DependentUpon>202010140834236_AddBirthdayFieldToCustomers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
