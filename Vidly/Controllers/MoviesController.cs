@@ -1,4 +1,6 @@
-﻿using System.Web.Mvc;
+﻿using System.Data.Entity;
+using System.Linq;
+using System.Web.Mvc;
 using Vidly.Models;
 
 namespace Vidly.Controllers
@@ -15,8 +17,17 @@ namespace Vidly.Controllers
         // GET: Movies
         public ActionResult Index()
         {
-            return View();
+            var movies = _context.Movies.Include(x => x.Genre).ToList();
+            return View(movies);
         }
+
+        public ActionResult Details(int id)
+        {
+            var movie = _context.Movies.SingleOrDefault(x => x.Id == id);
+            return View(movie);
+        }
+
+
 
     }
 }

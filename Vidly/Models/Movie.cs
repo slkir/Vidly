@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Vidly.Models
 {
@@ -11,6 +12,11 @@ namespace Vidly.Models
         public DateTime ReleaseDate { get; set; }
         public DateTime DateAdded { get; set; }
         public int NumberInStock { get; set; }
+
+        public Genre Genre { get; set; }
+
+        [Required]
+        public byte GenreId { get; set; }
 
         public ICollection<Genre> Genres { get; set; }
 
