@@ -12,11 +12,15 @@
 	{
 		<tr>
 			<th>Customers</th>
+			<th>Discount rate</th>
+			<th>Membership type</th>
 		</tr>
 		foreach (var customer in Model)
 		{
 			<tr>
-				<td>@customer.FirstName @customer.SecondName</td>
+				<td>@customer.Name</td>
+				<td>@customer.MembershipType.DiscountRate %</td>
+				<td>@customer.MembershipType.Title</td>
 			</tr>
 		}
 	}
