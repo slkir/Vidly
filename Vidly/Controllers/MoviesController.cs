@@ -24,7 +24,7 @@ namespace Vidly.Controllers
 
         public ActionResult Details(int id)
         {
-            var movie = _context.Movies.Include(g => g.Genres).SingleOrDefault(x => x.Id == id);
+            var movie = _context.Movies.Include(g => g.Genre).SingleOrDefault(x => x.Id == id);
             return View(movie);
         }
 
@@ -39,8 +39,16 @@ namespace Vidly.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(NewMovieFormViewModel viewModel)
         {
+            if (!ModelState.IsValid)
+            {
+                var movieGenres = _context.Genres.ToList();
+                viewModel.Genre = movieGenres;
+                return View("NewMovie", viewModel);
+            }
+
             var movieInDb = _context.Movies.FirstOrDefault(x => x.Id == viewModel.Movie.Id);
             if (movieInDb == null)
             {

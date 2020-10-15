@@ -235,6 +235,26 @@
     <Compile Include="Migrations\202010141118427_MovieChangeTest.Designer.cs">
       <DependentUpon>202010141118427_MovieChangeTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202010151021332_ChangeMovieModel.cs" />
+    <Compile Include="Migrations\202010151021332_ChangeMovieModel.Designer.cs">
+      <DependentUpon>202010151021332_ChangeMovieModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010151027289_ChangeDateTypeInMovieModel.cs" />
+    <Compile Include="Migrations\202010151027289_ChangeDateTypeInMovieModel.Designer.cs">
+      <DependentUpon>202010151027289_ChangeDateTypeInMovieModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010151029285_ChangeDateTypeInMovieModel1.cs" />
+    <Compile Include="Migrations\202010151029285_ChangeDateTypeInMovieModel1.Designer.cs">
+      <DependentUpon>202010151029285_ChangeDateTypeInMovieModel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010151039306_ChangeMovieModelAgain.cs" />
+    <Compile Include="Migrations\202010151039306_ChangeMovieModelAgain.Designer.cs">
+      <DependentUpon>202010151039306_ChangeMovieModelAgain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010151051008_TryToFixProblem.cs" />
+    <Compile Include="Migrations\202010151051008_TryToFixProblem.Designer.cs">
+      <DependentUpon>202010151051008_TryToFixProblem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -379,6 +399,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202010141118427_MovieChangeTest.resx">
       <DependentUpon>202010141118427_MovieChangeTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010151021332_ChangeMovieModel.resx">
+      <DependentUpon>202010151021332_ChangeMovieModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010151027289_ChangeDateTypeInMovieModel.resx">
+      <DependentUpon>202010151027289_ChangeDateTypeInMovieModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010151029285_ChangeDateTypeInMovieModel1.resx">
+      <DependentUpon>202010151029285_ChangeDateTypeInMovieModel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010151039306_ChangeMovieModelAgain.resx">
+      <DependentUpon>202010151039306_ChangeMovieModelAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010151051008_TryToFixProblem.resx">
+      <DependentUpon>202010151051008_TryToFixProblem.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
