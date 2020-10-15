@@ -22,3 +22,18 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/* Bootstrap override */
+button.btn.btn-primary {
+    margin-bottom: 20px;
+}
+
+/* Validation styles */
+.field-validation-error
+{
+    color: red;
+}
+
+.input-validation-error{
+    border: 2px solid red;
+}
