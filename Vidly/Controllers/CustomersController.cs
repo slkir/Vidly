@@ -1,11 +1,11 @@
-﻿using System.Data.Entity;
-using System.Linq;
+﻿using System.Linq;
 using System.Web.Mvc;
 using Vidly.Models;
 using Vidly.ViewModels;
 
 namespace Vidly.Controllers
 {
+
     public class CustomersController : Controller
     {
         private ApplicationDbContext _context;
@@ -20,6 +20,7 @@ namespace Vidly.Controllers
             _context.Dispose();
         }
 
+        //[Authorize(Roles = “CanManageMovies”)]
         public ActionResult New()
         {
             var membershiptTypes = _context.MembershipTypes.ToList();
@@ -77,10 +78,15 @@ namespace Vidly.Controllers
             return View("CustomerForm", viewModel);
         }
 
+        //public ActionResult Index()
+        //{
+        //    var customers = _context.Customers.Include(x => x.MembershipType);
+        //    return View(customers);
+        //}
+
         public ActionResult Index()
         {
-            var customers = _context.Customers.Include(x => x.MembershipType);
-            return View(customers);
+            return View();
         }
 
         public ActionResult Details(int? id)
